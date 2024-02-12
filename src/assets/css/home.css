@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+  
+.home-header {
+    text-align: center;
+    padding: 5vw;
+    background-color: #00a300;
+    color: #ffffff;
+}
+  
+.home-title {
+    font-size: 4em;
+}
+  
+.home-introduction {
+    text-align: center;
+    padding-top: 2vw;
+    padding-right: 5vw;
+    padding-bottom: 1vw;
+    padding-left: 5vw;
+    background-color: #0056b3;
+}
+  
+.home-description {
+    font-size: 2em;
+    color: #ffffff;
+}
+  
+.home-buttons {
+    text-align: center;
+    padding-top: 1vw;
+    padding-right: 5vw;
+    padding-bottom: 5vw;
+    padding-left: 5vw;
+    background-color:#0056b3;
+}
+  
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #0056b3;
+    border: solid;
+    border-radius: 2em;
+    border-color: #0056b3;
+}
+  
+button {
+    padding: 1.5em;
+    margin: 1em;
+    font-size: 1.5em;
+    width: 10em; 
+    background-color: #00a300;
+    color: #fff;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+  
+button:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    color:#ffffff
+}
+
+.register-button-container {
+    position: fixed;
+    top: 1vw;
+    right: 1vw;
+}
+  
+.register-button {
+    padding: 1vw 2vw;
+    font-size: 1em;
+    background-color: #0056b3;
+    color: #00a300;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.register-button:hover {
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+  
+  
+

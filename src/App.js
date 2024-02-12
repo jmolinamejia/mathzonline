@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-function App() {
+// pages
+import Register from './pages/Register';
+import HomePage from './pages/Homepage';
+import IntroPage from './pages/Intro';
+import KindergartenPage from './pages/Kindergarten';
+import FirstGradePage from './pages/Firstgrade';
+import SecondGradePage from './pages/Secondgrade';
+import ThirdGradePage from './pages/Thirdgrade';
+import FourthGradePage from './pages/Fourthgrade';
+import FifthGradePage from './pages/Fifthgrade';
+
+const App = () => {
+  const handleRegister = (newUser) => {
+    console.log('Registered User:', newUser);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage onRegister={handleRegister} />} />
+        <Route path="/register" element={<Register onRegister={handleRegister} />} />
+        <Route path="/intro" element={<IntroPage />} />
+        <Route path="/kindergarten" element={<KindergartenPage />} />
+        <Route path="/firstgrade" element={<FirstGradePage />} />
+        <Route path="/secondgrade" element={<SecondGradePage />} />
+        <Route path="/thirdgrade" element={<ThirdGradePage />} />
+        <Route path="/fourthgrade" element={<FourthGradePage />} />
+        <Route path="/fifthgrade" element={<FifthGradePage />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

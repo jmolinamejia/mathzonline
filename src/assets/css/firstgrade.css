@@ -1,0 +1,76 @@
+.firstgradepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0056b3;
+    font-family: 'Arial', sans-serif;
+}
+  
+.firstgrade-title {
+    text-align: center;
+    padding: 5vw;
+    margin-bottom: 2vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    background-color: #00a300;
+    color: #fff;
+    border-radius: 50%;
+}
+  
+.firstgrade-description {
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    margin: 5vw;
+}
+
+.math-questions {
+    margin-top: 2vw;
+}
+
+.question-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00a300;
+    border: 0.1em solid #ddd;
+    border-radius: 2vw;
+    padding: 2vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-bottom: 2vw;
+}
+
+.question {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 1vw;
+    text-align: center;
+}
+
+input {
+    width: 90%;
+    padding: 1vw;
+    font-size: 1em;
+    margin-bottom: 1vw;
+    border-radius: 1vw;
+    text-align: center;
+}
+
+.submit-button {
+    margin-top: 1vw;
+    padding: 1vw 2vw;
+    font-size: 1em;
+    background-color: #fff;
+    color: #00a300;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
